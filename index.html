@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+
+            <form class="login_form ">
+                <h1 id="title">Login</h1>
+                <div class="combination"></div>
+                <div class="login_form-group">
+                    <input class="login_form-input" id="emailUsername" type="text" autofocus placeholder="Username/Email">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div class="login_form-group">
+                    <input class="login_form-input" type="password" autofocus placeholder="password">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div>
+                    <button type="submit" id="loginSubmit" class="login_form-button">
+                        Continue
+                    </button>
+                    <div class="login_form-input-error"></div>
+                </div>
+                <p class="login_form-text">
+                    <a href="#" class="link" id="passwordReset">Forgot your password</a>
+                </p>
+                <p class="login_form-text">
+                    <a href="#" class="link" id="createAccount">Don't have an account! Create account</a>
+                </p>
+           </form>
+           
+           <form class="signUp_form form_hidden" id="signUp">
+                <h1 id="title">Create Account</h1>
+                <div class="combination combination-error"></div>
+                <div class="login_form-group">
+                    <input class="signUp_form-input" id="signUpUsername" type="text" autofocus placeholder="Username">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div class="login_form-group">
+                    <input class="signUp_form-input" id="email" type="email" autofocus placeholder="Email">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div class="login_form-group">
+                    <input class="signUp_form-input" id="password" type="password" autofocus placeholder="Password">
+                    <input class="signUp_form-input" id="confirmPassword" type="password" autofocus placeholder="Confirm Password">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div>
+                    <button type="submit" id="signupSubmit" class="login_form-button">
+                        Continue
+                    </button>
+                    <div class="login_form-input-error"></div>
+                </div>                
+                <p class="login_form-text">
+                    <a href="#" class="link" id="signIn">Already have an account! Sign In</a>
+                </p>
+            </form>
+            
+            <form class="passwordReset_form form_hidden">
+                <h1 id="title">Password Reset</h1>
+                <div class="combination"></div>
+                <div class="login_form-group">
+                    <input class="passwordReset_form-input" id="resetEmail" type="email" autofocus placeholder="Email">
+                    <div class="login_form-input-error"></div>
+                </div>
+                <div>
+                    <button type="submit" id="passwordResetButton" class="login_form-button">
+                        Continue
+                    </button>
+                    <div class="login_form-input-error"></div>
+                </div>
+                <p class="login_form-text">
+                    <a href="#" class="link" id="signIn">Already have an account! Sign In</a>
+                </p>
+           </form>
+        
+        </div>
+    </body>
+</html>
